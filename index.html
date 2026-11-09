@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffe34d">
+  <title>The Bromine Chronicles!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="paper-grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="The Bromine Chronicles home">B! <span>THE BCU</span></a>
+    <div class="issue">COUNTDOWN ISSUE · NO. 10</div>
+  </header>
+
+  <main>
+    <!-- PAGE 1: COVER -->
+    <section class="page active" id="page-cover" aria-labelledby="cover-title">
+      <div class="cover-layout">
+        <div class="cover-copy">
+          <p class="eyebrow">EXTRA! EXTRA! READ ALL ABOUT IT!</p>
+          <h1 id="cover-title" class="cover-title"><span>THE</span><strong>BROMINE</strong><em>CINEMATIC UNIVERSE!</em></h1>
+          <div class="burst burst-cover">A BIRTHDAY<br>COUNTDOWN<br>SPECTACULAR!</div>
+          <p class="cover-subtitle">daily reminder that phyiscs is cool.</p>
+          <button class="comic-button red" id="startBtn">OPEN THIS ISSUE <span>➜</span></button>
+          <p class="tiny-note">WARNING: CONTAINS EXTREME LEVELS OF UN-RELATED NONSENSE.</p>
+        </div>
+        <div class="cover-art">
+          <div class="sunburst"></div>
+          <div class="cover-panel">
+            <div class="panel-label">FEATURING...</div>
+            <div class="hero-doodle" aria-hidden="true">★</div>
+            <div class="speech speech-one">WHO'S<br>THE MAIN<br>CHARACTER?!</div>
+            <div class="speech speech-two">YOU, OBVIOUSLY!</div>
+            <div class="shinchan-frame">
+              <img src="assets/images/shinchan.png" alt="Shin-chan sticker" onerror="this.style.display='none'; this.nextElementSibling.style.display='grid'">
+              <span class="sticker-fallback">しん<br>ちゃん</span>
+            </div>
+            <span class="impact-word">POW!</span>
+            <span class="issue-stamp">SECRET<br>EDITION</span>
+          </div>
+          <span class="corner-caption">A TOTALLY SERIOUS PUBLICATION*</span>
+        </div>
+      </div>
+      <div class="cover-bottom"><span>★ THE WORLD'S MOST IMPORTANT COUNTDOWN ★</span><span>*not legally verified</span></div>
+    </section>
+
+    <!-- PAGE 2: COUNTDOWN -->
+    <section class="page" id="page-countdown" aria-labelledby="countdown-title">
+      <div class="page-heading">
+        <span class="chapter-tag">THE BIG EVENT</span>
+        <h2 id="countdown-title">THE COUNTDOWN<br><span>IS ON!</span></h2>
+        <p class="heading-caption">SOMEONE'S BIRTHDAY IS APPROACHING AT SPEED OF FLASH - SPEED OF QUICKSILVER.</p>
+      </div>
+      <div class="countdown-scene">
+        <div class="countdown-burst">TICK<br>TOCK!</div>
+        <div class="countdown-card">
+          <div class="countdown-top"><span>MISSION: NOVEMBER 20</span><span class="live-dot">● LIVE COUNTDOWN</span></div>
+          <div class="timer-grid" aria-live="polite">
+            <div class="time-unit"><strong id="days">00</strong><span>DAYS</span></div>
+            <b class="colon">:</b>
+            <div class="time-unit"><strong id="hours">00</strong><span>HOURS</span></div>
+            <b class="colon">:</b>
+            <div class="time-unit"><strong id="minutes">00</strong><span>MINUTES</span></div>
+            <b class="colon">:</b>
+            <div class="time-unit"><strong id="seconds">00</strong><span>SECONDS</span></div>
+          </div>
+          <div class="countdown-footer"><span>IST · AS THE CLOCK TICKS IN INDIA</span><span id="countdownStatus">THE ANTICIPATION IS REAL.</span></div>
+        </div>
+        <div class="side-sfx sfx-left">ZOOM!</div>
+        <div class="side-sfx sfx-right">WOW!</div>
+      </div>
+      <div class="comic-strip">
+        <div class="strip-panel"><span class="panel-number">01</span><strong>THE DATE?</strong><p>20 NOVEMBER.</p></div>
+        <div class="strip-panel yellow-panel"><span class="panel-number">02</span><strong>THE VIBE?</strong><p>UNREASONABLY ICONIC.</p></div>
+        <div class="strip-panel blue-panel"><span class="panel-number">03</span><strong>THE PERSON?</strong><p>PALAK. OBVIOUSLY.</p></div>
+      </div>
+      <div class="page-actions">
+        <button class="comic-button blue" id="letterBtn">NEXT: THE IMPORTANT STUFF ➜</button>
+        <button class="text-button" id="secretBtn">psst... don't press this</button>
+      </div>
+    </section>
+
+    <!-- PAGE 3: LETTER -->
+    <section class="page" id="page-letter" aria-labelledby="letter-title">
+      <div class="letter-layout">
+        <div class="letter-art">
+          <div class="letter-burst">HEY<br>YOU!</div>
+          <div class="big-star">★</div>
+          <div class="letter-sticker">CERTIFIED<br>FAVOURITE<br>HUMAN</div>
+          <div class="tiny-spark">✦</div>
+        </div>
+        <article class="letter-paper">
+          <div class="chapter-tag">CHAPTER 02 · A NOTE FROM THE EDITOR</div>
+          <h2 id="letter-title">A VERY IMPORTANT<br><span>MESSAGE.</span></h2>
+          <div class="letter-rule"></div>
+          <p id="letterBody" class="letter-body"></p>
+          <p id="signoff" class="signoff"></p>
+          <button class="comic-button red" id="backBtn">↶ RE-READ THIS ISSUE</button>
+        </article>
+      </div>
+      <button class="secret-stamp" id="letterSecret" aria-label="Open the secret surprise">TOP<br>SECRET<br>★</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>THE BROMINE UNIVERSE © </span>
+    <span id="footerIssue">ISSUE 10 · THE RETURN OF HANDSOME CODER</span>
+  </footer>
+
+  <div class="modal" id="secretModal" role="dialog" aria-modal="true" aria-labelledby="secretTitle" hidden>
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal" aria-label="Close">×</button>
+      <div class="modal-burst">SHHH!</div>
+      <p class="chapter-tag">CLASSIFIED FRIENDSHIP INFORMATION</p>
+      <h2 id="secretTitle">YOU FOUND THE SECRET!</h2>
+      <p id="secretMessage">Palak, you are an absolute limited-edition human. Do not let this information get to your head. (It probably already has.)</p>
+      <button class="comic-button yellow" id="modalOkay">UNDERSTOOD, BOSS.</button>
+    </div>
+  </div>
+
+  <div class="birthday-overlay" id="birthdayOverlay" hidden>
+    <div class="birthday-box">
+      <div class="birthday-kicker">EXTRA EXTRA EXTRA!</div>
+      <h2>IT'S YOUR<br><span>BIRTHDAY!!!</span></h2>
+      <p>THE MAIN CHARACTER DAY HAS OFFICIALLY ARRIVED.</p>
+      <button class="comic-button red" id="birthdaySecret">UNLOCK THE BIRTHDAY SECRET ★</button>
+      <button class="birthday-close" id="closeBirthday">LET ME SEE THE SITE →</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
